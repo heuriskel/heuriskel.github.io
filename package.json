@@ -1,0 +1,58 @@
+{
+  "name": "heuriskel-web",
+  "version": "1.0.0",
+  "description": "Heuriskel Website",
+  "scripts": {
+    "start": "./node_modules/live-server/live-server.js --host=0.0.0.0 --port=4000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heuriskel/heuriskel.github.io.git"
+  },
+  "author": "Heuriskel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heuriskel/heuriskel.github.io/issues"
+  },
+  "homepage": "https://github.com/heuriskel/heuriskel.github.io#readme",
+  "devDependencies": {
+    "eslint": "7.6.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "live-server": "1.2.1",
+    "prettier": "2.0.5"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2020": true
+    },
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "no-restricted-syntax": "off",
+      "no-plusplus": "off",
+      "import/extensions": [
+        "error",
+        "always"
+      ],
+      "max-classes-per-file": "off"
+    }
+  }
+}
