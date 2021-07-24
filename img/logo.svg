@@ -3,5 +3,5 @@
 <title>Heuriskel</title>
 
 <path fill="#263238" d="M0 0h9.525v9.525H0z"/>
-<path d="M2.117 7.543v-.176l.6-.039V2.197l-.6-.04v-.175h2.197v.176l-.6.039v2.377l2.097-.032V2.197l-.6-.04v-.175h2.197v.176l-.6.039v5.131l.6.04v.175H5.211v-.176l.6-.039v-2.52H3.714v2.52l.6.04v.175z" style="fill:#ffffff;fill-opacity:1;stroke-width:0.74815899" aria-label="H" font-weight="400" font-size="7.98" font-family="Vidaloka" letter-spacing="0" word-spacing="0" text-anchor="end" fill="#fff" stroke-width=".748"/>
+<path d="M2.117 7.543v-.176l.6-.039V2.197l-.6-.04v-.175h2.197v.176l-.6.039v2.377l2.097-.032V2.197l-.6-.04v-.175h2.197v.176l-.6.039v5.131l.6.04v.175H5.211v-.176l.6-.039v-2.52H3.714v2.52l.6.04v.175z" fill="#fff" stroke-width=".748"/>
 </svg>
