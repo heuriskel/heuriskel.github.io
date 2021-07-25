@@ -17,14 +17,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/button.css" />
     <link rel="stylesheet" type="text/css" href="css/demo6.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body class="demo-6">
-    <svg class="hidden">
+    <svg class="hidden svgs-that-are-hidden">
+      <!-- <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <linearGradient id="gradient-blue" x2="1" y2="1">
+          <stop offset="0%" stop-color="#4facfe" />
+          <stop offset="100%" stop-color="#00f2fe" />
+        </linearGradient>
+      </svg> -->
       <symbol id="icon-arrow" viewBox="0 0 24 24">
         <title>arrow</title>
         <polygon
@@ -76,7 +84,7 @@
       <div class="content content--fixed">
         <a
           class="github"
-          href="mailto:hello@heuriskel.com"
+          href="mailto:contact@heuriskel.com"
           title="Contact through email"
           style="margin-left: 3rem;"
           ><svg class="icon icon--email">
@@ -90,14 +98,93 @@
             <use xlink:href="#icon-github"></use></svg
         ></a>
       </div>
-      <div class="content">
-        <canvas class="scene scene--full" id="scene"></canvas>
-        <div class="content__inner">
-          <h2 class="content__title">Heuriskel</h2>
-          <h3 class="content__subtitle">Software Consultancy</h3>
+      <canvas class="scene scene--full" id="scene"></canvas>
+      <div class="content main-content">
+        <div class="heur-logo">
+          <div class="content__inner">
+            <a class="btn btn-3" href="javascript:delay('mailto:contact@heuriskel.com')"><span class="btn-circle"></span><span class=btn-text>Contact Heuriskel</span></a>
+            <h2 class="content__title">Heuriskel</h2>
+            <h3 class="content__subtitle">Software Consultancy</h3>
+          </div>
+        </div>
+
+        <div class="heur-intro-container">
+          <div class="heur-intro-container-left">
+            <div></div>
+          </div>
+          <div class="heur-intro-container-right">
+            <h1>Research & Development</h1>
+            <p>
+              Heuriskel provides software Consultancy services on a broad
+              spectrum of fields such as graphics, augmented/virtual reality,
+              and artificial intelligence. Solutions based on the latest
+              research and developments in academia combined with high-quality
+              engineering standards are a central part of Heuriskel's
+              methodologies.
+            </p>
+          </div>
+        </div>
+
+        <div class="heur-graphics-container">
+          <div class="heur-graphics-container-left">
+            <h1>Graphics & Games</h1>
+            <p>
+              From helping achieve the creative vision for a video game to
+              developing performant scientific visualization tools, Heuriskel
+              brings your team vast experience in industry-standard tools and
+              engines.
+            </p>
+          </div>
+          <div class="heur-graphics-container-right">
+            <div></div>
+          </div>
+        </div>
+
+        <div class="heur-intro-container ai">
+          <div class="heur-intro-container-left">
+            <div></div>
+          </div>
+          <div class="heur-intro-container-right">
+            <h1>Artificial Intelligence</h1>
+            <p>
+              Machine learning is a tremendously flexible method of inference.
+              Your project could likely benefit from it and Heuriskel can help
+              you and your team determine key points for its application.
+            </p>
+          </div>
+        </div>
+
+        <div class="heur-graphics-container xr">
+          <div class="heur-graphics-container-left">
+            <h1>Augmented & Virtual Reality</h1>
+            <p>
+              Extended Reality (XR) is a field where attention to performance is
+              imperative. Heuriskel can help debugging and optimizing the entire
+              pipeline, from the first user interaction up to the last photon
+              that leaves their screen.
+            </p>
+          </div>
+          <div class="heur-graphics-container-right">
+            <div></div>
+          </div>
         </div>
       </div>
     </main>
+
+    <footer>
+      <img src="img/signature.svg" alt="">
+      <div>
+        <b>Heuriskel LLC</b>
+        <p>2105 Vista Oeste St NW, Suite E - 1286</p>
+        <p>Albuquerque, NM 87120</p>
+        <p>+1 (505) 317-2131</p>
+      </div>
+      <div>
+        <a href="https://github.com/heuriskel"><b>Heuriskel's GitHub</b></a>
+        <p>Copyright &copy 2021, Heuriskel LLC.</p>
+        <p><a href="thanks.html">Credits</a></p>
+      </div>
+    </footer>
     <script src="js/demo.js"></script>
     <script src="js/three.min.js"></script>
     <script src="js/demo6.js"></script>

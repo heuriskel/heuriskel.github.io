@@ -60,7 +60,7 @@ function updateDots(a) {
 }
 
 function render(a) {
-  requestAnimationFrame(render)
+  // requestAnimationFrame(render)
   updateDots(a)
   sphere.rotation.y = a * 0.0001
   sphere.rotation.x = -a * 0.0001
@@ -83,3 +83,15 @@ window.addEventListener("resize", () => {
   resizeTm = clearTimeout(resizeTm)
   resizeTm = setTimeout(onResize, 200)
 })
+
+let firstClick = false
+function delay(url) {
+  if (!firstClick) {
+    firstClick = true
+    setTimeout(() => {
+      window.location = url
+    }, 200)
+  } else {
+    window.location = url
+  }
+}
