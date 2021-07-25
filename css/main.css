@@ -151,6 +151,14 @@
   animation:change 4s infinite ease-in-out alternate-reverse;
 }
 
+/* heuriskel mail */
+.mail .heur-intro-container-left div {
+  background:linear-gradient(to right,#2af598,#009efd,#2af598) left/200% 100%;
+  mask: url(/img/svg/email.svg) center/contain no-repeat;
+  -webkit-mask: url(/img/svg/email.svg) center/contain no-repeat;
+  animation:change 2s infinite ease-in-out alternate-reverse;
+}
+
 /* footer */
 footer {
   display: flex;

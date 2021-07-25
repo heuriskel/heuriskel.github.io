@@ -6,10 +6,16 @@
 }
 
 a.btn {
-  position: absolute;
   top: 150%;
   text-decoration: none;
   line-height: 80px;
+}
+a.btnstart {
+  position: absolute;
+}
+
+a.btnend {
+  position: relative;
 }
 
 a span.btn-text {

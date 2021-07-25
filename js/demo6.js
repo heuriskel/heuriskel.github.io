@@ -60,7 +60,7 @@ function updateDots(a) {
 }
 
 function render(a) {
-  // requestAnimationFrame(render)
+  requestAnimationFrame(render)
   updateDots(a)
   sphere.rotation.y = a * 0.0001
   sphere.rotation.x = -a * 0.0001
