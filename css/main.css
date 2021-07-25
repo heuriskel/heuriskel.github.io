@@ -16,6 +16,17 @@
   align-items: center;
   height: 100vh;
 }
+@media only screen and (max-width: 1060px) {
+  .heur-logo {
+    margin-bottom: 4em;
+  }
+}
+
+.flex-break {
+  flex-basis: 0%;
+  height: 0;
+  order: 2;
+}
 
 /* heur intro */
 
@@ -26,24 +37,26 @@
   align-items: center;
   align-content: center;
 
-  width: 80%;
+  width: var(--p-width);
   margin: auto;
   text-align: center;
   z-index: 0;
   /* background-color: darkslategrey; */
   /* border: solid black 1px; */
-  height: 32rem;
+  height: 32em;
 }
 
 .heur-intro-container-left {
   /* background-color: tan; */
   flex: 1 1 50%;
+  order: 1;
   width: 100%;
   height: 60%;
 }
 
 .heur-intro-container-right {
   /* background-color: teal; */
+  order: 3;
   flex: 1 1 50%;
 }
 
@@ -52,28 +65,30 @@
   width: 100%;
   height: 100%;
 
-  background:linear-gradient(to right,#00f2fe,#4facfe,#00f2fe) left/200% 100%;
+  background: linear-gradient(to right, #00f2fe, #4facfe, #00f2fe) left/200%
+    100%;
   mask: url(/img/svg/science.svg) center/contain no-repeat;
   -webkit-mask: url(/img/svg/science.svg) center/contain no-repeat;
-  animation:change 4s infinite ease-in-out alternate-reverse;
+  animation: change 4s infinite ease-in-out alternate-reverse;
 }
 @keyframes change {
   to {
-    background-position:right;
+    background-position: right;
   }
 }
 
 .heur-intro-container-right h1 {
-  font-family: 'Vidaloka', serif;
-  font-size: 4rem;
+  font-family: "Vidaloka", serif;
+  font-size: var(--title-fs);
   font-weight: normal;
 }
 
 .heur-intro-container-right p {
-  font-family: 'Barlow', Helvetica, Arial, sans-serif;
-	font-weight: 500;
-  font-size: 1.5rem;
-  padding: 0 2rem;
+  font-family: "Barlow", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: var(--text-fs);
+  padding: 0 2em;
+  text-align: left;
 }
 
 /* heur graphics */
@@ -85,24 +100,26 @@
   align-items: center;
   align-content: center;
 
-  width: 80%;
+  width: var(--p-width);
   margin: auto;
   text-align: center;
   z-index: 0;
   /* background-color: darkslategrey; */
   /* border: solid black 1px; */
-  height: 32rem;
+  height: 32em;
 }
 
 .heur-graphics-container-right {
   /* background-color: tan; */
   flex: 1 1 50%;
+  order: 3;
   width: 100%;
   height: 60%;
 }
 
 .heur-graphics-container-left {
   /* background-color: teal; */
+  order: 1;
   flex: 1 1 50%;
 }
 
@@ -111,62 +128,74 @@
   width: 100%;
   height: 100%;
 
-  background:linear-gradient(to right,#fee140,#fa709a,#fee140) left/200% 100%;
+  background: linear-gradient(to right, #fee140, #fa709a, #fee140) left/200%
+    100%;
   mask: url(/img/svg/3d-modeling.svg) center/contain no-repeat;
   -webkit-mask: url(/img/svg/3d-modeling.svg) center/contain no-repeat;
-  animation:change 4s infinite ease-in-out alternate-reverse;
+  animation: change 4s infinite ease-in-out alternate-reverse;
 }
 @keyframes change {
   to {
-    background-position:right;
+    background-position: right;
   }
 }
 
 .heur-graphics-container-left h1 {
-  font-family: 'Vidaloka', serif;
-  font-size: 4rem;
+  font-family: "Vidaloka", serif;
+  font-size: var(--title-fs);
   font-weight: normal;
 }
 
 .heur-graphics-container-left p {
-  font-family: 'Barlow', Helvetica, Arial, sans-serif;
-	font-weight: 500;
-  font-size: 1.5rem;
-  padding: 0 2rem;
+  font-family: "Barlow", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: var(--text-fs);
+  padding: 0 2em;
+  text-align: left;
 }
 
 /* heuriskel AI */
 .ai .heur-intro-container-left div {
-  background:linear-gradient(to right,#38f9d7,#43e97b,#38f9d7) left/200% 100%;
+  background: linear-gradient(to right, #38f9d7, #43e97b, #38f9d7) left/200%
+    100%;
   mask: url(/img/svg/brain.svg) center/contain no-repeat;
   -webkit-mask: url(/img/svg/brain.svg) center/contain no-repeat;
-
 }
 
 /* heuriskel XR */
 .xr .heur-graphics-container-right div {
-  background:linear-gradient(to right,#f093fb,#f5576c,#f093fb) left/200% 100%;
+  background: linear-gradient(to right, #f093fb, #f5576c, #f093fb) left/200%
+    100%;
   mask: url(/img/svg/smart-drone.svg) center/contain no-repeat;
   -webkit-mask: url(/img/svg/smart-drone.svg) center/contain no-repeat;
-  animation:change 4s infinite ease-in-out alternate-reverse;
+  animation: change 4s infinite ease-in-out alternate-reverse;
 }
 
 /* heuriskel mail */
 .mail .heur-intro-container-left div {
-  background:linear-gradient(to right,#2af598,#009efd,#2af598) left/200% 100%;
+  background: linear-gradient(to right, #2af598, #009efd, #2af598) left/200%
+    100%;
   mask: url(/img/svg/email.svg) center/contain no-repeat;
   -webkit-mask: url(/img/svg/email.svg) center/contain no-repeat;
-  animation:change 2s infinite ease-in-out alternate-reverse;
+  animation: change 2s infinite ease-in-out alternate-reverse;
+}
+
+.mail .heur-intro-container b {
+  text-align: center;
+}
+
+.mail {
+  margin-bottom: 8em;
 }
 
 /* footer */
 footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   background-color: rgb(19, 25, 28);
-  height: 18rem;
+  height: 18em;
 }
 
 footer img {
@@ -175,4 +204,67 @@ footer img {
   /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
   /* background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); */
   border-radius: 5px;
+}
+
+:root {
+  --p-width: 80%;
+  --title-fs: 4em;
+  --text-fs: 1.5em;
+}
+@media only screen and (max-width: 1780px) {
+  :root {
+    /* background-color: slateblue; */
+    --p-width: 90%;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  :root {
+    /* background-color: seagreen; */
+    --p-width: 90%;
+    --title-fs: 3.5em;
+    --text-fs: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    /* background-color: slategray; */
+    --p-width: 95%;
+  }
+  .icon-container {
+    min-height: 30vw;
+    max-height: 30vw;
+    order: 0;
+  }
+  .heur-intro-container,
+  .heur-graphics-container {
+    margin-bottom: 10vw;
+    flex-direction: column;
+    align-items: center;
+    /* height: fit-content; */
+  }
+
+  a.btnend {
+    top: 0%;
+  }
+
+  footer {
+    height: 36em;
+    flex-direction: column;
+    align-items: start;
+    align-content: center;
+    /* padding-left: 8rem; */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .icon-container {
+    min-height: 40vw;
+    max-height: 40vw;
+    order: 0;
+  }
+  .heur-intro-container,
+  .heur-graphics-container {
+    margin-bottom: 20vw;
+    height: 36em;
+  }
 }

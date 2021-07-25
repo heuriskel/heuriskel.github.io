@@ -97,5 +97,5 @@ window.addEventListener("resize", () => {
 // }
 
 function contactClick(btn) {
-  setTimeout(() => btn.blur(), 300)
+  setTimeout(() => btn.blur(), 1000)
 }
