@@ -72,12 +72,13 @@ a span.btn-text {
 }
 
 .btn-3:focus {
-  color: white;
-  background-color: rgba(33, 150, 243, 0.5);
+  /* color: white; */
+  /* background-color: rgba(33, 150, 243, 0.5); */
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .btn-3:focus:before {
-  transform: translateX(-80%);
+  transform: translateX(-100%);
 }
 .btn-3:focus:after {
-  transform: translateX(80%);
+  transform: translateX(100%);
 }

@@ -84,14 +84,18 @@ window.addEventListener("resize", () => {
   resizeTm = setTimeout(onResize, 200)
 })
 
-let firstClick = false
-function delay(url) {
-  if (!firstClick) {
-    firstClick = true
-    setTimeout(() => {
-      window.location = url
-    }, 200)
-  } else {
-    window.location = url
-  }
+// let firstClick = false
+// function contactClick(url) {
+//   if (!firstClick) {
+//     firstClick = true
+//     setTimeout(() => {
+//       window.location = url
+//     }, 200)
+//   } else {
+//     window.location = url
+//   }
+// }
+
+function contactClick(btn) {
+  setTimeout(() => btn.blur(), 300)
 }
